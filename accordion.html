@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <section class="container block">
+
+      <div class="accordion-wrapper">
+        <div class="accordion__intro">
+          <h2 class="accordion__title">رزومه و سوابق</h2>
+          <span>
+            <span>ویرایش</span>
+            <span>
+              <i class="fas fa-edit"></i>
+            </span>
+          </span>
+        </div>
+        <div class="accordion">
+          <header class="accordion__header">
+            <h3 class="accordion__heading">سابقه تحصیلی</h3>
+            <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>
+          </header>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              doloribus quod consequatur eos harum perferendis quam, repudiandae
+              earum tempore aspernatur ducimus quos magni animi provident assumenda
+              id, nesciunt optio enim molestiae? Minus id recusandae quod alias quae
+              hic possimus ducimus! Consequuntur quibusdam nobis dicta eos eligendi
+              natus architecto aperiam magni.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <header class="accordion__header">
+            <h3 class="accordion__heading">سابقه تحصیلی</h3>
+            <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>
+          </header>
+          <div class="accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              doloribus quod consequatur eos harum perferendis quam, repudiandae
+              earum tempore aspernatur ducimus quos magni animi provident assumenda
+              id, nesciunt optio enim molestiae? Minus id recusandae quod alias quae
+              hic possimus ducimus! Consequuntur quibusdam nobis dicta eos eligendi
+              natus architecto aperiam magni.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <script>
+      const accordionHeader = document.querySelectorAll(".accordion__header");
+      const accordion = document.querySelector(".accordion");
+      accordionHeader.forEach((item) => {
+        item.addEventListener("click", (e) => {
+        e.target.parentElement.classList.toggle("accordion__expanded");
+      })
+      });
+    </script>
+  </body>
+</html>
