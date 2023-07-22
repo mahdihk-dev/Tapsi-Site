@@ -698,7 +698,7 @@ input,textarea{
 }
 .bg-header{
     height: 520px;
-    background:url("/assets/image/banner.webp") no-repeat;
+    background:url("../assets/image/banner.mobile.webp") no-repeat;
     background-size: cover;
     display: flex;
     width: 100%;
@@ -764,6 +764,7 @@ input,textarea{
     }
     .bg-header{
         justify-content: center;
+        background:url("../assets/image/banner.webp") no-repeat;
     }
     .intro-wrapper{
         flex-direction: row;
