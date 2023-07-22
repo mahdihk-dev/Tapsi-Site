@@ -698,7 +698,7 @@ input,textarea{
 }
 .bg-header{
     height: 520px;
-    background:url("../assets/image/banner.mobile.webp") no-repeat;
+    background:url("../assets/image/banner-mobile.webp") no-repeat;
     background-size: cover;
     display: flex;
     width: 100%;
